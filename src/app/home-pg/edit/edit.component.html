@@ -1,0 +1,28 @@
+<section>
+    <div class="container">
+        <div class="child1">
+            <div class="title">
+                <p>I'm a title.Click here to edit me.</p>
+            </div>
+            <div class="txt">
+                <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or</p>
+                <p>double click me to add your own content and make changes to the font. I'm a great place for you to</p>
+                <p>tell a story and let your users know a little more about you.</p>  
+            </div>
+            <div class="btn">
+                <button routerLink="/Products">SHOP NOW ></button>
+            </div>
+        </div>
+        <div class="child2">
+            <div class="carousel">
+                <div class="slides" [style.transform]="'translateX(' + slideIndex * -100 + '%)'">
+                  <div class="slide" *ngFor="let item of carouselItems">
+                    <img [src]="item.img" alt="{{ item.caption }}">
+                  </div>
+                </div>
+
+              </div>
+              </div>
+        </div>
+   
+</section>

@@ -1,0 +1,110 @@
+.container{
+    .card{
+        height: 60vh;
+        margin: 25px;
+        padding: 25px;
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        .btn{
+            font-size: 14px !important;
+            margin-top: 20px !important;
+            font-weight: 400;
+            padding: 12px 72px;
+            border-radius: 3px !important;
+        }
+        img{
+            text-decoration: none;
+            color: inherit;
+            border: none;
+            outline: none;
+            height: 162px;
+            width: 250px;
+            margin: 20px 0px;
+        }
+        h4,h6{
+            font-weight: 400;
+        }
+    }
+}
+.card-table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solde rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
+    
+}
+
+.quantity-box{
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-top: -18px;
+    .num{
+        font-size: 20px;
+    }
+    span{
+        font-weight: 600;
+        font-size: 25px;
+        
+    }
+}
+.hr{
+    height: 2px;
+    width: 190px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.t1{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        width: 400px;
+        .card{
+            height: 72vh;
+        }
+        .card-table{
+            .cart-product{
+                .tabletable-responsive{
+                    tbody{
+                        tr{
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+        .action{
+            display: none;
+        }
+        .total{
+            display: none;
+        }
+        .tr2{
+            column-span: 1;
+        }
+        .t{
+            display: none;
+        }
+        .t1{
+            display: block;
+            width: 100px;
+        }
+        .ttl{
+            width: 50px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<section class="parent1">
+    <div class="header">
+        <h1>ABOUT <br> AMBITS</h1>
+    </div>
+    <div class="hr"></div>
+</section>
+<section class="parent2">
+    <div class="container">
+        <div *ngFor="let item of info1" class="child">
+            <img [src]="item.img" alt="">
+            <div class="title">
+                <h2>{{item.title}}</h2>
+            </div>
+            <div class="txt">
+                <p>I'm a paragraph. Click here to add your own text and edit me. <br> It's easy. Just click “Edit Text” or double click me to add your own content and make <br> changes to the font. I'm a great place for you to tell a story and let your users know a <br> little more about you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="parent3">
+    <div class="container1">
+        <div *ngFor="let i of info2" class="child1">
+            <img [src]="i.img" alt="">
+            <div class="txt">
+                <p>“I'm a testimonial. Click to edit me and add <br> text that says something nice about you and <br> your services.”</p>
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button routerLink="/Products">SHOP NOW ></button>
+    </div>
+</section>
+
+<footer>
+    <app-footer-pg></app-footer-pg>
+</footer>
+

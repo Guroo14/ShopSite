@@ -1,0 +1,120 @@
+.parent1{
+    font-family: 'Pacifico', cursive;
+    height: 300px;
+    position: relative;
+    .header{
+    position: absolute;
+    left: 770px;
+    top: 50px;
+    h1{
+        font-size: 75px;
+        color: #215779;
+    }
+    }
+    .hr{
+        position: absolute;
+        left: 874px;
+        top: 265px;
+        height: 10px;
+        width: 90px;
+        background-color: #215779;
+    }
+}
+.parent2{
+    height: 300px;
+    font-family: 'Pacifico', cursive;
+    margin-top: 70px;
+    .container{
+        display: flex;
+        text-align: center;
+        gap: 85px;
+        .child{
+            .title{
+                margin-top: 25px;
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .txt{
+                margin-top: 20px;
+                text-align: center;
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.parent3{
+    height: 300px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    .container1{
+        width: 1400px;
+        display: flex;
+        text-align: center;
+        gap: 80px;
+        margin-left: 335px;
+        .child1{
+            text-align: center;
+            .txt{
+                margin-top: 35px;
+            }
+        }
+    }
+    .btn{
+        margin-right: 75px;
+        margin-top: 60px;
+    button{
+        width: 255px;
+        height: 43px;
+        background-color: #215779;
+        color: #74A4C1;
+        border: none;
+    }
+    button:hover{
+        transition: 0.5s;
+        background-color: #123c57;
+    }
+}
+}
+footer{
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 500px){
+    .parent1{
+        left: 0px;
+        .header{
+            left: 140px;
+            h1{
+                font-size: 50px;
+            }
+        }
+        .hr{
+            top: 200px;
+            left: 190px;
+        }
+    }
+    .parent2{
+        margin-top: 0;
+        .container{
+            flex-direction: column;
+        }
+    }
+    .parent3{
+        .container1{
+            margin-top: 340px;
+            width: 483px;
+            margin-left: 0;
+            flex-direction: column;
+        }
+        .btn{
+            margin-top: 40px;
+            margin-left: 80px;
+        }
+    }
+    footer{
+        margin-top: 500px;
+    }
+}

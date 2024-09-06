@@ -1,0 +1,62 @@
+<div class="main-nav">
+    <nav class="nav1">
+        <div class="logo1">
+            <p routerLink="/">AmBits</p>
+        </div>
+        <div class="navbar">
+         <ul>
+            <li routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}"  routerLink="/" >Home</li>
+            <li routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" routerLink="/About">About Us</li>
+            <li routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" routerLink="/Products">Products</li>
+            <li routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" routerLink="/Forum">Forum</li>
+         </ul>
+         <div class="sign-in-parent">
+            <div routerLink="/Login" class="sign-in">
+                <div class="logo2">
+                   <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="txt">
+                   <p>Log In</p>
+                </div>
+            </div>
+            <div routerLink="/Cart" class="store">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div style="font-size: 8px;" class="badge bg-danger">{{totalItem}}</div>
+               </div> 
+           </div>      
+         </div>             
+    </nav>
+</div>
+
+
+<div  class="container">
+    <div  class="hamburger" >
+        <div routerLink="/" class="logo">
+            <p routerLink="/">AmBits</p>
+           </div>
+           <div class="main-toggle">
+
+            <div routerLink="/Cart" class="storee">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div style="font-size: 8px;" class="badge bg-danger">{{totalItem}}</div>
+               </div> 
+            <div (click)="hamburgerMenu()" class="toggle" [class.menu-open]="check">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+               </div>
+               
+           </div>
+           
+    </div>
+
+    <nav *ngIf="hide"  class="nav2">
+        <div  class="navbar">
+         <ul>
+             <li (click)="hideFunction()"  routerLink="/" >Home</li>
+             <li (click)="hideFunction()"  routerLink="/About" >About</li>
+             <li (click)="hideFunction()" routerLink="/Products">Products</li>
+             <li (click)="hideFunction()" routerLink="/Forum">Forum</li>
+         </ul>
+        </div>
+    </nav>

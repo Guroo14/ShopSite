@@ -1,0 +1,153 @@
+section{
+    height: 850px;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    .title{
+        color: #215779;
+        width: 500px;
+        margin-left: 760px;
+        h1{
+            font-size: 75px;
+        }
+    }
+    .hr{
+        background-color: #215779;
+        height: 10px;
+        width: 90px;
+        margin-left: 895px;
+        margin-top: 58px;
+    }
+    .form{
+        display: flex;
+        gap: 5px;
+        width: 900px;
+        margin-top: 40px;
+        margin-left: 589px;
+        .child1{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            input{
+                width: 349px;
+                height: 33px;
+                border: 1px solid rgb(56, 56, 56);
+            }
+            input:focus-visible {
+                outline: none;
+            }
+            input:hover{
+                transition: 0.2s;
+                background-color: rgb(161, 162, 163);
+                border: 1px solid rgb(56, 56, 56);
+            }
+            input:focus {
+                background-color: lightblue;
+            }
+        }
+        .child2{
+            width: 349px;
+            height: 109px;
+            textarea{
+                border: 1px solid rgb(56, 56, 56);
+                width: 100%;
+                height: 109px;
+            }
+            textarea:focus-visible {
+                outline: none;
+            }
+            textarea:hover{
+                transition: 0.2s;
+                background-color: rgb(161, 162, 163);
+                border: 1px solid rgb(56, 56, 56);
+            }
+            textarea:focus{
+                background-color: lightblue;
+            }
+        }
+    }
+    .btn1{
+        width: 119px;
+        height: 33px;
+        margin-left: 1173px;
+        margin-top: 5px;
+    button{
+        background-color: #215779;
+        color: #74A4C1;
+        border: none;
+        width: 119px;
+        height: 33px;
+    }
+    button:hover{
+        transition: 0.5s;
+        background-color: #123c57;
+    }
+}
+    .info{
+        height: 400px;
+        text-align: center;
+        margin-top: 50px;
+        .title1{
+            margin-top: 55px;
+            color: #3F4F59;
+        }
+        .txt{
+            margin-top: 25px;
+            text-align: center;
+            color: #3C4547;
+        }
+        .sakontakto{
+            color: #3C4547;
+        }
+        .aboutus{
+            cursor: pointer;
+            margin-top: 20px;
+            color: #6D82C6;
+            p:hover{
+                transition: 0.5s;
+                color: rgb(63, 63, 63);
+            }
+        }
+        
+        .btn{
+            margin-top: 25px;
+        button{
+            background-color: #215779;
+            color: #74A4C1;
+            border: none;
+            width: 135px;
+            height: 37px;
+        }
+        button:hover{
+            transition: 0.5s;
+            background-color: #123c57;
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 500px){
+    section{
+        width: 483px;
+        height: 900px;
+        .title{
+            margin-left: 110px;
+            width: 340px;
+            margin-top: 80px;
+            h1{
+                font-size: 50px;
+            }
+        }
+        .hr{
+            margin-left: 185px;
+            margin-top: 30px;
+        }
+        .form{
+            flex-direction: column;
+            width: 355px;
+            margin-left: 65px;
+        }
+        .btn1{
+            margin-left: 295px;
+        }
+    }
+}

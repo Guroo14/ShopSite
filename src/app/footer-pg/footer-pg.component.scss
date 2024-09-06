@@ -1,0 +1,92 @@
+section{
+    position: relative;
+    height: 320px;
+    
+    background-color: #123C57;
+    font-family: 'Inter', sans-serif;
+    .parent{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+        right: 111px;
+        height: 200px;
+        .child1{
+            width: 584px;
+            height: 200px;
+            img{
+                margin-left: 25px;
+                width: 128px;
+                height: 27px;
+            }
+            .text1{
+                margin-left: 25px;
+                margin-top: 30px;
+                p{
+                    color: #959CB1;
+                }
+            }
+            .icons{
+                margin-left: 3px;
+                margin-top: 30px;
+                i{
+                    color: #CED3F6;
+                    margin-left: 25px;
+                }
+                i:hover{
+                    transition: 0.3s;
+                    color: #4A6CF7;
+                }
+            }
+        }
+        .child2,  .child3, .child4{
+            width: 201px;
+            height: 200px;
+            h2{
+                font-size: 20px;
+                color: white;
+            }
+            ul{
+                margin-top: 40px;
+                margin-left: -30px;
+                li{
+                    margin-top: 14px;
+                    list-style-type: none;
+                    color: #5A607F;
+                }
+                li:hover{
+                    color: #4A6CF7;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    section{
+        top: 60px;
+        width: 483px;
+        height: 960px;
+        .parent{
+            left: 40px;
+            width: 400px;
+            height: 900px;
+            flex-direction: column;
+            .child1{
+                width: 400px;
+                img{
+                    margin-left: 0;
+                }
+                .text1{
+                    margin-left: 0;
+                }
+                .icons{
+                    margin-left: -25px;
+                }
+            }
+        }
+    }
+}

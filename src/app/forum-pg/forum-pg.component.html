@@ -1,0 +1,81 @@
+<section>
+    <div class="main">
+        <div class="header">
+            <h1>Forum</h1>
+            <p>Join the forum and find the answers you have been searching for.</p>
+        </div>
+        <div class="btn">
+            <button>Create New Post</button>
+        </div>
+        <div class="post-parent">
+            <div *ngFor="let post of post1Info" class="help">
+                <div class="help-main">
+                    <div  class="child">
+                        <div class="text">
+                            <h2>{{post.header}}</h2>
+                            <p>{{post.text}}</p>
+                        </div>
+                        <div class="icons">
+                            <div class="eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="message">
+                                <i class="fa-regular fa-message"></i>
+                                <p>{{post.coms}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <p>{{post.fol}}</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="post-parent1">
+            <div class="new-post">
+                <p>New Post</p>
+            </div>
+            <div class="posts-main">
+                <div *ngFor="let coms of post2Info" class="postebi">
+                    <div class="profile">
+                        <div class="img">
+                            <img [src]="coms.img" alt="">
+                        </div>
+                        <div class="txt">
+                            <h6>{{coms.creator}}</h6>
+                            <p>{{coms.text}}</p>
+                        </div>
+                    </div>
+                    <div class="post-text">
+                        <h5>{{coms.sale}}</h5>
+                        <h6>{{coms.ann}}</h6>
+                        <p>{{coms.txt}}</p>
+                    </div>
+                    <div class="hr1"></div>
+                    <div class="reactions">
+                        <div class="like">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <p>{{coms.like}}</p>
+                        </div>
+                        <div class="coms">
+                            <div class="commentar">
+                                <i class="fa-regular fa-message"></i>
+                                <p>{{coms.coms}}</p>
+                            </div>
+                            <div class="glaza">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+</section>
+
+<footer>
+    <app-footer-pg></app-footer-pg>
+</footer>

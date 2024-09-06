@@ -1,0 +1,304 @@
+section{
+    height: 935px;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+   
+    .nav{
+        display: flex;
+        width: 960px;
+        justify-content: center;
+        gap: 55px;
+        height: 60px;
+        position: absolute;
+        top: 30px;
+        left: 437px;
+        .ul{
+            width: 660px;
+            cursor: pointer;
+            ul{
+                display: flex;
+                gap: 30px;
+                li{
+                    color: #7A9AAF;
+                    list-style-type: none;
+                    
+                }
+                li:hover{
+                    transition: 0.2s;
+                    color: rgb(212, 208, 208);
+                }
+            }
+        }
+        .search{
+            position: relative;
+            i{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                color: #7A9AAF;
+            }
+            input{
+                width: 204px;
+                height: 36px;
+                background: transparent;
+                border: 2px solid #7A9AAF;
+                border-radius: 7px;
+                outline: none;
+                padding: 0 30px;
+            }
+            label{
+                position: absolute;
+                left: 31px;
+                top: 5.5px;
+                transition: top .3s;
+                color: #7A9AAF;
+            }
+            input:focus ~ label{
+                top: -12px;
+                background-color: white;
+            }
+        }
+    }
+    .hr{
+        width: 883px;
+        height: 1px;
+        background-color: #CCCCCC;
+        position: absolute;
+        left: 492px;
+        top: 80px;
+    }
+    .main{
+        width: 980px;
+        height: 880px;
+        position: relative;
+        left: 430px;
+        top: 20px;
+        .header{
+            position: absolute;
+            text-align: center;
+            left: 240px;
+            top: 60px;
+            color: #215779;
+            h1{
+                font-size: 55px;
+            }
+            p{
+                margin-top: 26px;
+            }
+        }
+        .btn{
+            position: absolute;
+            left: 816px;
+            top: 250px;
+            button{
+                color: white;
+                width: 130px;
+                height: 36px;
+                font-size: 14px;
+                border: none;
+                background-color: #215779;
+            }
+            button:hover{
+                transition: 0.1;
+                opacity: .7;
+            }
+        }
+        .post-parent{
+            height: 244px;
+            width: 960px;
+            position: absolute;
+            top: 306px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: #215779;
+            .help{
+                width: 960px;
+                height: 102px;
+                border: 1px solid #215779;
+                .help-main{
+                    display: flex;
+                    width: 898px;
+                    height: 100px;
+                    align-items: center;
+                    justify-content: space-between;
+                    .child{
+                        justify-content: space-between;
+                        width: 820px;
+                        height: 54px;
+                        display: flex;
+                        align-items: center;
+                        .text{
+                            margin-left: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            width: 502px;
+                            height: 54px;
+                            h2{
+                                cursor: pointer;
+                                font-size: 15px;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                        .icons{
+                            display: flex;
+                            width: 170px;
+                            height: 24px;
+                            gap: 60px;
+                            .message{
+                                align-items: baseline;
+                                gap: 6px;
+                                display: flex;
+                            }
+                        }
+                    }
+                    .follow{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .post-parent1{
+            width: 940px;
+            height: 272px;
+            position: absolute;
+            top: 560px;
+            .posts-main{
+                display: flex;
+                gap: 30px;
+                height: 240px;
+                width: 960px;
+                .postebi{
+                    width: 300px;
+                    height: 240px;
+                    border: 1px solid #215779;
+                    .profile{
+                        display: flex;
+                        gap: 13px;
+                        margin-left: 16px;
+                        margin-top: 30px;
+                        .img{
+                            img{
+                                width: 33px;
+                                height: 33px;
+                            }
+                        }
+                        .txt{
+                            // display: flex;
+                            // flex-direction: column;
+                            h6{
+                                font-size: 12px;
+                                color: #215779;
+                            }
+                            p{
+                                color: #ABC0CD;
+                                font-size: 11px;
+                                margin-top: -5px;
+                            }
+                        }
+                    }
+                    .post-text{
+                        margin-top: 13px;
+                        width: 270px;
+                        margin-left: 16px;
+                        h5{
+                            color: #61B7E9;
+                            font-size: 14px;
+                        }
+                        h6{
+                            color: #95AFC0;
+                            margin-top: 12px;
+                            font-size: 12px;
+                        }
+                        p{
+                            color: #95AFC0;
+                            margin-top: 12px;
+                            font-size: 11px;
+                        }
+                    }
+                    .hr1{
+                        margin-left: 16px;
+                        height: 1px;
+                        width: 253px;
+                        background-color: #CCCCCC;
+                    }
+                    .reactions{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 252px;
+                        height: 30px;
+                        margin-left: 16px;
+                        margin-top: 13px;
+                        .like{
+                            cursor: pointer;
+                            gap: 5px;
+                            display: flex;
+                            p{
+                                color: #215779;
+                            }
+                            i{
+                                color: #215779;
+                                font-size: 22px;
+                            }
+                        }
+                        .coms{
+                            display: flex;
+                            gap: 10px;
+                            i{
+                                color: #215779;
+                            }
+                            .commentar{
+                                display: flex;
+                                align-items: baseline;
+                                gap: 5px;
+                            }
+                            .glaza{
+                                i{
+                                    color: #215779;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+    
+}
+
+@media screen and (max-width: 500px){
+    section{
+        .main{
+            left: 0;
+            width: 483px;
+            .btn{
+                display: none;
+            }
+            .header{
+                left: 10px;
+            }
+            .post-parent{
+                display: none;
+            }
+            .post-parent1{
+                margin-top: -300px;
+                height: 785px;
+                width: 483px;
+                .new-post{
+                    margin-left: 96px;
+                    width: 100px;
+                }
+                .posts-main{
+                    flex-direction: column;
+                    width: 310px;
+                    margin-left: 95px;
+                }
+            }
+        }
+    }
+    footer{
+        margin-top: 110px;
+    }
+}

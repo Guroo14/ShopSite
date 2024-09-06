@@ -1,0 +1,54 @@
+<section class="parent1">
+    <div class="header">
+        <h1>OUR <br> PRODUCTS</h1>
+    </div>
+    <div class="hr"></div>
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input [(ngModel)]="searchTerm"  (ngModelChange)="Search()"  type="text">
+        <label for="">Search</label>
+    </div>
+    <div class="sort">
+        <button (click)="sortPrice()" >Lower to Higher</button>
+        <button (click)="sortLower()" >Higher to Lower</button>
+    </div>
+</section>
+
+<div class="yvelas-parent">
+    <div class="mshobeli" *ngFor="let item of productList ">
+        <div  routerLink="/Products/{{item.headphones}}" 
+        [queryParams]="{img:item.img,
+                       title:item.title,
+                        price:item.price,
+                        quantityTxt:item.quantityTxt,
+                        qnt:item.quantity,
+                        cart:item.cart,
+                        buy:item.buy,
+                        shipping:item.shipping,
+                        text1:item.text1,
+                        text2:item.text2,
+                        text3:item.text3,
+                        text4:item.text4,
+                        returns:item.returns,
+                        returntxt1:item.returntxt1,
+                        returntxt2:item.returntxt2,
+                        returntxt3:item.returntxt3,
+                        returntxt4:item.returntxt4,
+                        description1:item.description1,
+                        description2:item.description2}" 
+              class="child">
+               <img [src]="item.img" alt="">
+                <div class="txt">
+                    <p>{{item.title}}</p>
+                    <p>$ {{item.price}}</p>
+                </div>
+        </div>
+        <div class="btn">
+            <button  (click)=" addtocart(item)">{{item.cart}}</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <app-footer-pg></app-footer-pg>
+</footer>

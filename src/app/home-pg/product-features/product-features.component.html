@@ -1,0 +1,21 @@
+<section>
+    <div class="title">
+       <h1>PRODUCT <br> FEATURES</h1> 
+    </div>
+    <div class="hr"></div>
+    <div class="video">
+        <img [src]="img" alt="">
+    </div>
+    <div class="svg-parent1">
+        <div *ngFor="let item of svgs" class="child">
+            <div class="img">
+                <img [src]="item.img" alt="">
+            </div>
+            <div class="txt">
+                <h3>{{item.title}}</h3>
+                <p>{{item.txt}}</p>
+            </div>
+        </div>
+    </div>
+
+</section>

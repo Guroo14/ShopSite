@@ -1,0 +1,179 @@
+.parent1{
+    font-family: 'Pacifico', cursive; 
+    height: 350px;
+    position: relative;
+    .header{
+        position: absolute;
+        left: 740px;
+        top: 55px;
+        text-align: center;
+        h1{
+            font-size: 75px;
+            color: #215779;
+        }
+    }
+    .hr{
+        position: absolute;
+        left: 899px;
+        top: 270px;
+        height: 10px;
+        width: 90px;
+        background-color: #215779;
+    }
+    .search{
+        position: absolute;
+        left: 200px;
+        top: 180px;
+        i{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: #7A9AAF;
+        }
+        input{
+            width: 264px;
+            height: 36px;
+            background: transparent;
+            border: 2px solid #7A9AAF;
+            border-radius: 7px;
+            outline: none;
+            padding: 0 30px;
+        }
+        label{
+            position: absolute;
+            left: 31px;
+            top: 5.5px;
+            transition: top .3s;
+            color: #7A9AAF;
+        }
+        input:focus ~ label{
+            top: -12px;
+            background-color: white;
+        }
+    }
+    .sort{
+        position: absolute;
+        top: 227px;
+        left: 200px;
+        display: flex;
+        gap: 5px;
+        button{
+            color: white;
+            width: 130px;
+            height: 36px;
+            font-size: 14px;
+            border: none;
+            background-color: #215779;
+        }
+        button:hover{
+            transition: 0.5s;
+            background-color: #123c57;
+        }
+    }
+}
+
+
+.yvelas-parent{
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-left: 360px;
+    .mshobeli{
+        display: flex;
+        font-family: 'Pacifico', cursive;
+        flex-direction: column;
+        width: 300px;
+        height: 385px;
+        .child{
+           
+                
+                img{
+                    width: 225px;
+                    height: 225px;
+                }
+               img:hover{
+                transition: 0.5s;
+                transform: scale(1.2);
+               }
+                .txt{
+                    margin-top: 36px;
+                    height: 60px;
+                    p{
+                        margin-top: -10px;
+                    }
+                }
+                .btn{
+                    button{
+                        margin-left: -13px;
+                        color: white;
+                        width: 210px;
+                        height: 36px;
+                        font-size: 14px;
+                        border: none;
+                        background-color: #215779;
+                    }
+                    button:hover{
+                        transition: 0.5s;
+                        background-color: #123c57;
+                    }
+                }
+           
+        }
+    }
+    .btn{
+        width: 240px;
+        margin-left: -20px;
+        button{
+            color: white;
+            width: 210px;
+            height: 36px;
+            font-size: 14px;
+            border: none;
+            background-color: #215779;
+        }
+        button:hover{
+            transition: 0.5s;
+            background-color: #123c57;
+        }
+    }
+}
+footer{
+    margin-top: 155px;
+}
+
+@media screen and (max-width: 500px){
+    .parent1{
+        left: 0;
+        width: 483px;
+        height: 450px;
+        .header{
+            left: 110px;
+            h1{
+                font-size: 50px;
+            }
+        }
+        .hr{
+            top: 220px;
+            left: 200px;
+        }
+        .search{
+            top: 300px;
+            left: 120px;
+        }
+        .sort{
+            top: 350px;
+            left: 121px;
+        }
+    }
+    .yvelas-parent{
+        margin-left: 0;
+        width: 483px;
+        .mshobeli{
+            margin-left: 140px;
+        }
+    }
+    footer{
+        margin-top: 2400px;
+    }
+}

@@ -1,0 +1,198 @@
+section{
+    height: 550px;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    .backToProducts{
+        position: absolute;
+        cursor: pointer;
+        margin-top: 20px;
+        color: #6D82C6;
+        left: 905px;
+        p:hover{
+             transition: 0.5s;
+            color: rgb(63, 63, 63);
+        }
+    }
+    .container{
+        position: absolute;
+        top: 80px;
+        left: 350px;
+        display: flex;
+        gap: 40px;
+        .child1{
+            img{
+                width: 500px;
+            }
+        }
+        .child2{
+            width: 500px;
+            .price{
+                margin-top: 25px;
+            }
+            .quantity{
+                margin-top: 25px;
+                .quantity-box{
+                    cursor: pointer;
+                    display: flex;
+                    align-items: baseline;
+                    gap: 25px;
+                    margin-top: -18px;
+                    .num{
+                        font-size: 30px;
+                    }
+                    span{
+                        font-weight: 600;
+                        font-size: 35px;
+                        
+                    }
+                }
+            }
+            .btn{
+                width: 380px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 20px;
+                margin-left: -10px;
+                .butt1, .butt2{
+                    text-align: center;
+                    width: 355px;
+                    height: 40px;
+                    background-color: #3182B5;
+                    color: white;
+                    border: none;
+                }
+                .butt2{
+                    background-color: black;
+                    color: white;
+                }
+                
+            }
+            .btn1-parent{
+                margin-top: 15px;
+                height: 150px;
+                width: 460px;
+                position: absolute;
+                .btn1{
+                    display: flex;
+                    position: absolute;
+                    // top: 400px;
+                    width: 410px;
+                    align-items: center;
+                    font-family: 'Pacifico', cursive;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    border: none;
+                    background-color: white;
+                    
+                    .header{
+                        p:hover{
+                            transition: 0.5s;
+                            color: gainsboro;
+                        }
+                    }
+                    .plus{ 
+                        width: 50px;
+                        height: 40px;
+                        position: relative;
+                        .zeda{
+                            position: absolute;
+                            height: 0.5px;
+                            width: 14px;
+                            border: 1px solid black;
+                            background-color: black;
+                            transform: rotate(90deg);
+                            top: 14px;
+                            border: none;
+                        }
+                        .qveda{
+                            position: absolute;
+                            height: 0.5px;
+                            width: 13.5px;
+                            background-color: black;
+                            top: 13.6px;
+                           border: none;
+                        }
+                    }
+                }
+                .txt1{
+                    position: absolute;
+                    top: 50px;
+                    z-index: 99;
+                    p{
+                        font-family: 'Pacifico', cursive;
+                        font-size: 11px;
+                        width: 389px;
+                    }
+                    animation: text 2s;
+                }
+            }
+        }
+        
+        
+    }
+}
+@keyframes text{
+    from{top: 40px;}
+    to{top: 50px;}
+}
+footer{
+    margin-top: 55px;
+}
+
+
+@media screen and (max-width: 500px){
+    section{
+        left: 0;
+        width: 483px;
+        .backToProducts{
+            left: 100px;
+        }
+        .container{
+            flex-direction: column;
+            width: 350px;
+            left: 100px;
+            .child1{
+                img{
+                    height: 240px;
+                    width: 240px;
+                }
+            }
+            .child2{
+                width: 300px;
+                .quantity{
+                    .quantity-box{
+                        width: 300px;
+                    }
+                }
+                .btn{
+                    width: 300px;
+                    .butt1{
+                        width: 200px;
+                    }
+                    .butt2{
+                        width: 200px;
+                    }
+                }
+                .btn1-parent{
+                    width: 300px;
+                    .btn1{
+                        width: 300px;
+                    }
+                    .txt1{
+                        margin-left: -15px;
+                        width: 300px;
+                        p{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        margin-top: 300px;
+    }
+}

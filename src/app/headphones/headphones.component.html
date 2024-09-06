@@ -1,0 +1,55 @@
+   
+   
+    <section >
+        <div class="backToProducts">
+            <p routerLink="/Products">Back To Products></p>
+        </div>
+        <div class="container">
+            <div class="child1">
+                <img [src]="info.img" alt="">
+            </div>
+            <div class="child2">
+                <div class="header1">
+                    <h3>{{info.title}}</h3>
+                </div>
+                <div class="price">
+                    <p>$ {{info.price}}</p>
+                </div>
+                <div class="quantity">
+                    <p>{{info.quantityTxt}}</p>
+                    <div class="quantity-box">
+                        <span (click)="dec(info)" class="minus">-</span>
+                        <span class="num">{{info.qnt}}</span>
+                        <span (click)="inc(info)" class="plus">+</span>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button (click)=" addtocart(info)" class="butt1">{{info.cart}}</button>
+                    <button class="butt2">{{info.buy}}</button>
+                </div>
+                <div (click)="toggleTxt()" class="btn1-parent">
+                    <button class="btn1">
+                        <div class="header">
+                            <p>{{info.shipping}}</p>
+                        </div>
+                        <div class="plus">
+                            <div *ngIf="show" class="zeda"></div>
+                            <div class="qveda"></div>
+                        </div>
+                        <div *ngIf="hide" class="txt1">
+                            <p>{{info.text1}} <br> {{info.text2}} <br> {{info.text3}} <br> {{info.text4}} </p>      
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <app-footer-pg></app-footer-pg>
+    </footer>
+   
+   
+
+
+
